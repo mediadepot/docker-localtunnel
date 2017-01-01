@@ -13,7 +13,12 @@ if (!process.env.CLOUDFLARE_KEY) throw new Error("CLOUDFLARE_KEY required")
 
 
 
-var tunnel = localtunnel(process.env.LOCALTUNNEL_PORT, function(err, opened_tunnel) {
+var tunnel = localtunnel(process.env.LOCALTUNNEL_PORT,
+    {
+        local_host: process.env.LOCALTUNNEL_LOCALHOST,
+        subdomain:process.env.CLOUDFLARE_DOMAIN_PREFIX
+    },
+    function(err, opened_tunnel) {
     if (err) {
         throw err;
     }
