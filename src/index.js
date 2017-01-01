@@ -7,9 +7,9 @@ var dns = require('cloudflare/lib/dns');
 if (!process.env.LOCALTUNNEL_LOCALHOST) throw new Error("LOCALTUNNEL_LOCALHOST required")
 if (!process.env.LOCALTUNNEL_PORT) throw new Error("LOCALTUNNEL_PORT required")
 if (!process.env.CLOUDFLARE_DOMAIN) throw new Error("CLOUDFLARE_DOMAIN required")
+if (!process.env.CLOUDFLARE_DOMAIN_PREFIX) throw new Error("CLOUDFLARE_DOMAIN_PREFIX required")
 if (!process.env.CLOUDFLARE_EMAIL) throw new Error("CLOUDFLARE_EMAIL required")
 if (!process.env.CLOUDFLARE_KEY) throw new Error("CLOUDFLARE_KEY required")
-if (!process.env.CLOUDFLARE_DOMAIN_PREFIX) throw new Error("CLOUDFLARE_DOMAIN_PREFIX required")
 
 
 
