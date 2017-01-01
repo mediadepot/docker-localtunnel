@@ -1,0 +1,15 @@
+{
+  "name": "docker-localtunnel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Kulatunga <jason@thesparktree.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cloudflare": "^1.1.1",
+    "localtunnel": "^1.8.2"
+  }
+}

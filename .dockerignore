@@ -1,0 +1,17 @@
+# Created by .ignore support plugin (hsz.mobi)
+# Git files
+.git
+.gitignore
+
+# Local config files
+.editorconfig
+
+#build files
+build.sh
+buildCache.sh
+
+# Information files
+LICENSE
+README.md
+
+/src/node_modules
