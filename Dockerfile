@@ -1,4 +1,4 @@
-FROM node:7-alpine
+FROM mhart/alpine-node
 
 #Create localtunnel folder structure & set as volumes
 RUN mkdir -p /srv/localtunnel/app
